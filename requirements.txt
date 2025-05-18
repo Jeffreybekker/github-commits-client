@@ -1,0 +1,8 @@
+Django>=4.2
+requests
+pytest
+pytest-django
+flake8
+redis
+django-redis
+python-dotenv
