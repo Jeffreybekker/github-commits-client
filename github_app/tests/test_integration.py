@@ -3,6 +3,7 @@ from django.urls import reverse
 from rest_framework.test import APIClient
 from github_app import services
 
+
 @pytest.mark.django_db
 def test_commits_fetch_and_cache(monkeypatch):
     client = APIClient()
