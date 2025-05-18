@@ -1,8 +1,9 @@
 Django>=4.2
-requests
+django-redis
+djangorestframework>=3.14.0
+flake8
 pytest
 pytest-django
-flake8
-redis
-django-redis
 python-dotenv
+redis
+requests
