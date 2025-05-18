@@ -46,4 +46,6 @@ class Command(BaseCommand):
                 self.stdout.write(f"- {message}")
 
         source_str = "cache" if source == "cache" else "API"
-        self.stdout.write(self.style.SUCCESS(f"\nData opgehaald via {source_str} in {duration:.2f} milliseconden."))
+        self.stdout.write(
+            self.style.SUCCESS(
+                f"\nData opgehaald via {source_str} in {duration:.2f} milliseconden."))

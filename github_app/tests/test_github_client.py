@@ -79,7 +79,8 @@ def test_repo_not_found(mock_get):
     response_404.text = "Not Found"
     mock_get.return_value = response_404
 
-    with pytest.raises(Exception, match="Repository niet gevonden: Controleer of de repo-naam klopt."):
+    with pytest.raises(
+            Exception, match="Repository niet gevonden: Controleer of de repo-naam klopt."):
         fetch_and_group_commits("dummy/repo", "2025-01-01", "2025-01-02")
 
 
