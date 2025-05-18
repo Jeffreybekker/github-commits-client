@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'github_app',
-    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -123,6 +122,7 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+# Caching met redis 
 REDIS_HOST = "redis" if os.environ.get("USE_DOCKER") else "localhost"
 
 CACHES = {

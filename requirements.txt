@@ -1,6 +1,5 @@
 Django>=4.2
 django-redis
-djangorestframework>=3.14.0
 flake8
 pytest
 pytest-django

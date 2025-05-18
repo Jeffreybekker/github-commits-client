@@ -1,3 +1,5 @@
+# Max lengte op 100, 79 is te weinig. 
+# .venv bevat teveel 100+ karakters.
 [flake8]
 max-line-length = 100
 exclude = .venv

@@ -1,19 +1,10 @@
 from django.core.cache import cache
 import time
 
-
+# Haalt data uit de cache of gebruikt de functie voor ophalen data.
+# Geeft terug cache (van redis) of data van API terug.
+# Geeft de duur mee hoe lang het duurde voor ophalen uit cache of API.
 def get_cached_commits(key, fetch_function, timeout=300):
-    """
-    Haalt data uit de cache of roept een functie aan om de data op te halen.
-
-    Parameters:
-    - key (str): Unieke cache sleutel
-    - fetch_function (callable): Functie die data ophaalt als het niet gecached is
-    - timeout (int): Tijd in seconden om data te cachen (default = 1 uur)
-
-    Returns:
-    - Opgehaalde of gecachete data
-    """
     start_time = time.perf_counter()
     cached_data = cache.get(key)
     if cached_data is not None:
