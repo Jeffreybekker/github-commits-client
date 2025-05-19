@@ -49,7 +49,7 @@ def test_rate_limit_handling(mock_get, mock_sleep):
 
     result = fetch_and_group_commits("django/django", "2025-01-01", "2025-01-02")
 
-    # Check data goed gegroepeerd
+    # Checkt of data goed gegroepeerd is
     assert "Auteur 1" in result
     assert result["Auteur 1"]["count"] == 1
     assert "Bericht 1" in result["Auteur 1"]["messages"]
