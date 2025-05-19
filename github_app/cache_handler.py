@@ -1,6 +1,7 @@
 from django.core.cache import cache
 import time
 
+
 # Haalt data uit de cache of gebruikt de functie voor ophalen data.
 # Geeft terug cache (van redis) of data van API terug.
 # Geeft de duur mee hoe lang het duurde voor ophalen uit cache of API.

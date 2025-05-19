@@ -1,10 +1,10 @@
 import pytest
 from unittest.mock import patch, MagicMock
 import requests
-from github_app.github_client import fetch_and_group_commits 
+from github_app.github_client import fetch_and_group_commits
 
 
-# Rate limiting testen 
+# Rate limiting testen
 @patch("github_app.github_client.time.sleep", return_value=None)
 @patch("github_app.github_client.requests.get")
 def test_rate_limit_handling(mock_get, mock_sleep):

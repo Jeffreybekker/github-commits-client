@@ -122,7 +122,7 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# Caching met redis 
+# Caching met redis
 REDIS_HOST = "redis" if os.environ.get("USE_DOCKER") else "localhost"
 
 CACHES = {
