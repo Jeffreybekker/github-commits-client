@@ -10,7 +10,7 @@
 Voor het opvragen van privé repositories is een GitHub Personal Access Token nodig. Deze token moet worden opgeslagen in een .env bestand.
 
 1. Maak een GitHub token aan:
-    https://github.com/settings/tokens
+    https://github.com/settings/tokens<br>
     Klik op **Generate new token** en dan **Generate new token (classic)**
     Minimaal aanvinken:
     - repo
