@@ -11,7 +11,7 @@ Voor het opvragen van privé repositories is een GitHub Personal Access Token no
 
 1. Maak een GitHub token aan:
     https://github.com/settings/tokens<br>
-    Klik op **Generate new token** en dan **Generate new token (classic)**
+    Klik op **Generate new token** en dan **Generate new token (classic)**<br>
     Minimaal aanvinken:
     - repo
 2. Maak een .env-bestand aan in de root van het project (hier staat ook manage.py in)
