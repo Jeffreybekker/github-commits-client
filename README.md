@@ -12,7 +12,7 @@ git clone https://github.com/Jeffreybekker/github-commits-client.git
 ```
 2. **Maak een .env bestand aan**<br>
 Je moet hiervoor een .env-bestand aanmaken.<br>
-Meer informatie hoe je dit doet te vinden in configuratie.
+Meer informatie hoe je dit doet te vinden in [Configuratie](#configuratie).
 ```
 GITHUB_TOKEN = JOUW_TOKEN
 ```
