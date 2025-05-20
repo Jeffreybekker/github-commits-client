@@ -3,8 +3,16 @@
 ## Beschrijving
 Dit project haalt GitHub commits op via een Command Line Interface (CLI) die is gebouwd met Django. Het gebruikt Redis om data tijdelijk op te slaan. Zo worden er minder API verzoeken gedaan naar GitHub en worden de(zelfde) resultaten sneller geladen. Er wordt automatisch getest met pytest bij elke push via GitHub Actions. Ook controleert het met Flake8 op codekwaliteit. Verder is het project makkelijk te runnen via Docker.
 
-## Functionaliteit
-
+## Features
+- Commits ophalen van GitHub
+- Groepering per auteur
+- Caching met Redis
+- Command Line Interface (CLI)
+- Afhandelen errors
+- Docker
+- Unit- en integratietests
+- Flake8
+  
 ## Installatie
 1. **Clone de repository**
 ```
@@ -12,7 +20,7 @@ git clone https://github.com/Jeffreybekker/github-commits-client.git
 ```
 2. **Maak een .env bestand aan**<br>
 Je moet hiervoor een .env-bestand aanmaken.<br>
-Meer informatie hoe je dit doet te vinden in [Configuratie](#configuratie).
+Meer informatie hoe je dit doet is te vinden in [Configuratie](#configuratie).
 ```
 GITHUB_TOKEN = JOUW_TOKEN
 ```
