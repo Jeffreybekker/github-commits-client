@@ -31,9 +31,9 @@ Branch is optioneel, met default main.<br>
 Dit command run je in docker.<br>
 Command:
 ```
-python manage.py fetch_commits <repository> <start_date> <end_date> [--branch=branch_name]
+docker compose exec web python manage.py fetch_commits <repository> <start_date> <end_date> [--branch=branch_name]
 ```
 Bijvoorbeeld:
 ```
-python manage.py fetch_commits JeffreyBekker/github-commits-client 2025-05-18 2025-05-20 --branch=main
+docker compose exec web python manage.py fetch_commits Jeffreybekker/github-commits-client 2025-05-19 2025-05-20 --branch=main
 ```
