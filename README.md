@@ -11,12 +11,13 @@ Dit project haalt GitHub commits op via een Command Line Interface (CLI) die is 
 git clone https://github.com/Jeffreybekker/github-commits-client.git
 ```
 2. **Maak een .env bestand aan**
-Je moet hiervoor een .env-bestand aanmaken. Meer informatie hoe je dit doet te vinden in configuratie.
+Je moet hiervoor een .env-bestand aanmaken.<br>
+Meer informatie hoe je dit doet te vinden in configuratie.
 ```
 GITHUB_TOKEN = JOUW_TOKEN
 ```
 3. **Installeer Docker**
-Docker is te installeren via https://www.docker.com/products/docker-desktop/.
+Docker is te installeren via https://www.docker.com/products/docker-desktop/.<br>
 4. **Start de containers**
 Bouw de app op in docker:
 ```
