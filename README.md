@@ -1,7 +1,7 @@
 # GitHub Commit client
 
 ## Beschrijving
-Dit project haalt GitHub commits op via een Command Line Interface (CLI) die is gebouwd met Django. Het gebruikt Redis om data tijdelijk op te slaan. Zo worden er minder API verzoeken gedaan naar GitHub en worden de(zelfde) resultaten sneller geladen. Er wordt automatisch getest met pytest bij elke push via GitHub Actions. Ook controleert het met Flake8 op codekwaliteit. 
+Dit project haalt GitHub commits op via een Command Line Interface (CLI) die is gebouwd met Django. Het gebruikt Redis om data tijdelijk op te slaan. Zo worden er minder API verzoeken gedaan naar GitHub en worden de(zelfde) resultaten sneller geladen. Er wordt automatisch getest met pytest bij elke push via GitHub Actions. Ook controleert het met Flake8 op codekwaliteit. Verder is het project makkelijk te runnen via Docker.
 
 ## Functionaliteit
 
@@ -26,3 +26,14 @@ Zonder deze token kan de applicatie alleen worden gebruikt voor publieke reposit
 ## Tests Runnen
 
 ## CLI Gebruik
+De datums zijn in YYYY-MM-DD format.<br>
+Branch is optioneel, met default main.<br>
+Dit command run je in docker.<br>
+Command:
+```
+python manage.py fetch_commits <repository> <start_date> <end_date> [--branch=branch_name]
+```
+Bijvoorbeeld:
+```
+python manage.py fetch_commits JeffreyBekker/github-commits-client 2025-05-18 2025-05-20 --branch=main
+```
