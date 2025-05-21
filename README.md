@@ -47,9 +47,16 @@ GITHUB_TOKEN = JOUW_NET_AANGEMAAKTE_TOKEN
 ```
 Zonder deze token kan de applicatie alleen worden gebruikt voor publieke repositories.
 
-## Docker
-
 ## Tests Runnen
+De testen zijn gemaakt met pytest.<br>
+Om dit te testen in Docker gebruik:<br>
+```
+docker compose exec web pytest
+```
+Voor het testen buiten Docker, moet je virtual environment gebruiken en zorgen dat al je depencies zijn geïnstalleerd die in de requirements.txt staan.<br>
+```
+pytest
+```
 
 ## CLI Gebruik
 De datums zijn in YYYY-MM-DD format.<br>
