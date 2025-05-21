@@ -71,11 +71,11 @@ Bijvoorbeeld:
 docker compose exec web python manage.py fetch_commits Jeffreybekker/github-commits-client 2025-05-19 2025-05-20 --branch=main
 ```
 
-Dit krijg je te zien als de data wordt opgehaald vanuit de API:<br>
+**Dit krijg je te zien als de data wordt opgehaald vanuit de API:** <br>
 ![image](https://github.com/user-attachments/assets/fe4f9521-2864-4b8e-8f0f-9dc8e5bf2fa5)
 
-Dit krijg je te zien als de data wordt opgehaald vanuit de cache:<br>
+**Dit krijg je te zien als de data wordt opgehaald vanuit de cache:** <br>
 ![image](https://github.com/user-attachments/assets/e90150b2-7e54-49d9-82b1-d7a2c937409f)
 
-Voorbeeld wat er gebeurd als er geen netwerkverbinding is of de repository niet bestaat:<br>
+**Voorbeeld wat er gebeurd als er geen netwerkverbinding is of de repository niet bestaat:** <br>
 ![image](https://github.com/user-attachments/assets/8d78a4e9-3e7a-42e3-a667-c69784ffb3a0)
