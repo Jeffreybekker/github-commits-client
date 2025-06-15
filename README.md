@@ -22,14 +22,13 @@ The project is easy to run using Docker.
 ```
 git clone https://github.com/Jeffreybekker/github-commits-client.git
 ```
-2. **Maak een .env bestand aan**<br>
-Je moet hiervoor een .env-bestand aanmaken.<br>
-Meer informatie hoe je dit doet is te vinden in [Configuratie](#configuratie).
+2. **Create a .env-file in the root directory**<br>
+More information about this at [Configuration](#configuration).
 ```
-GITHUB_TOKEN = JOUW_TOKEN
+GITHUB_TOKEN = YOUR_TOKEN
 ```
-3. **Installeer Docker**<br>
-Docker is te installeren via https://www.docker.com/products/docker-desktop/.<br>
+3. **Install Docker**<br>
+You can install Docker via https://www.docker.com/products/docker-desktop/.<br>
 4. **Start de containers**<br>
 Bouw de app op in docker:
 ```
@@ -37,7 +36,7 @@ docker compose up --build
 ```
 Na deze stap kan je de CLI commands runnen.
 
-## Configuratie
+## Configuration
 Voor het opvragen van privé repositories is een GitHub Personal Access Token nodig. Deze token moet worden opgeslagen in een .env-bestand.
 
 1. Maak een GitHub token aan:
