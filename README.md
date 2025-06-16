@@ -62,23 +62,24 @@ pytest
 ```
 
 ## CLI Gebruik
-De datums zijn in YYYY-MM-DD format.<br>
-Branch is optioneel, met default main.<br>
-Dit command run je in docker.<br>
+Dates must be in YYYY-MM-DD format.<br>
+Branch is optional, with main as default.<br>
+Run the command inside Docker.<br>
 Command:
 ```
 docker compose exec web python manage.py fetch_commits <repository> <start_date> <end_date> [--branch=branch_name]
 ```
-Bijvoorbeeld:
+Example:
 ```
 docker compose exec web python manage.py fetch_commits Jeffreybekker/github-commits-client 2025-05-19 2025-05-20 --branch=main
 ```
 
-**Dit krijg je te zien als de data wordt opgehaald vanuit de API:** <br>
+## Example Outputs
+**When data is fetched from the GitHub API:** <br>
 ![image](https://github.com/user-attachments/assets/fe4f9521-2864-4b8e-8f0f-9dc8e5bf2fa5)
 
-**Dit krijg je te zien als de data wordt opgehaald vanuit de cache:** <br>
+**When data is fetched from the cache:** <br>
 ![image](https://github.com/user-attachments/assets/e90150b2-7e54-49d9-82b1-d7a2c937409f)
 
-**Voorbeeld wat er gebeurd als er geen netwerkverbinding is of de repository niet bestaat:** <br>
+**When there's no network connection or the repository does not exist:** <br>
 ![image](https://github.com/user-attachments/assets/8d78a4e9-3e7a-42e3-a667-c69784ffb3a0)
