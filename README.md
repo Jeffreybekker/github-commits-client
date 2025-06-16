@@ -34,21 +34,21 @@ Build the app in Docker:
 ```
 docker compose up --build
 ```
-After this step you can run the CLI commands.
+After this step, you can run the CLI commands.
 
 ## Configuration
-Voor het opvragen van privé repositories is een GitHub Personal Access Token nodig. Deze token moet worden opgeslagen in een .env-bestand.
+To access private repositories, a GitHub Personal Access Token is required. This token must be stored in a .env-file.
 
-1. Maak een GitHub token aan:
+1. Generate a GitHub token:
     https://github.com/settings/tokens<br>
-    Klik op **Generate new token** en dan **Generate new token (classic)**<br>
-    Minimaal aanvinken:
+    Click on **Generate new token**, then **Generate new token classic**<br>
+    At minimum, check:
     - repo
-2. Maak een .env-bestand aan in de root van het project (hier staat ook manage.py).
+2. Greate a .env-file in the root of the project (where manage.py is located):
 ```
-GITHUB_TOKEN = JOUW_NET_AANGEMAAKTE_TOKEN
+GITHUB_TOKEN = YOUR_RECENTLY_GENERATED_TOKEN
 ```
-Zonder deze token kan de applicatie alleen worden gebruikt voor publieke repositories.
+Without this token, the application can only be used for public repositories.
 
 ## Tests Runnen
 De testen zijn gemaakt met pytest.<br>
