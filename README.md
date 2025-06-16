@@ -50,13 +50,13 @@ GITHUB_TOKEN = YOUR_RECENTLY_GENERATED_TOKEN
 ```
 Without this token, the application can only be used for public repositories.
 
-## Tests Runnen
-De testen zijn gemaakt met pytest.<br>
-Om dit te testen in Docker gebruik:<br>
+## Running Tests
+Tests are written using pytest<br>
+To run tests inside Docker:<br>
 ```
 docker compose exec web pytest
 ```
-Voor het testen buiten Docker, moet je virtual environment gebruiken en zorgen dat al je depencies zijn geïnstalleerd die in de requirements.txt staan.<br>
+Make sure you activate your virtual environment and install the dependencies from requirements.txt:<br>
 ```
 pytest
 ```
