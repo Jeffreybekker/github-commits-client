@@ -29,12 +29,12 @@ GITHUB_TOKEN = YOUR_TOKEN
 ```
 3. **Install Docker**<br>
 You can install Docker via https://www.docker.com/products/docker-desktop/.<br>
-4. **Start de containers**<br>
-Bouw de app op in docker:
+4. **Start the containers**<br>
+Build the app in Docker:
 ```
 docker compose up --build
 ```
-Na deze stap kan je de CLI commands runnen.
+After this step you can run the CLI commands.
 
 ## Configuration
 Voor het opvragen van privé repositories is een GitHub Personal Access Token nodig. Deze token moet worden opgeslagen in een .env-bestand.
