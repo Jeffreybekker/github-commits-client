@@ -61,7 +61,7 @@ Make sure you activate your virtual environment and install the dependencies fro
 pytest
 ```
 
-## CLI Gebruik
+## CLI Usage
 Dates must be in YYYY-MM-DD format.<br>
 Branch is optional, with main as default.<br>
 Run the command inside Docker.<br>
